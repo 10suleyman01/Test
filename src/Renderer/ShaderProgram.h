@@ -25,7 +25,7 @@ namespace Renderer {
 
         ~ShaderProgram();
 
-        bool isCompiled() const { return isProgramCompiled; }
+        [[nodiscard]] bool isCompiled() const { return isProgramCompiled; }
 
         void use() const;
     };
